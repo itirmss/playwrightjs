@@ -8,6 +8,7 @@ class InventoryPage {
     this.cartBadge = page.getByTestId('shopping-cart-badge');
     this.cartLink = page.getByTestId('shopping-cart-link');
     this.sortDropdown = page.getByTestId('product-sort-container');
+    this.activeSortOption = page.getByTestId('active-option');
     this.items = page.getByTestId('inventory-item');
     this.itemPrices = page.getByTestId('inventory-item-price');
   }
