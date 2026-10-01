@@ -1,29 +1,3 @@
-// // const { test, expect } = require('@playwright/test');
-
-// test('Login with invalid credentials', async ({ page }) => {
-//   // Open SauceDemo
-//   await page.goto('https://www.saucedemo.com/');
-
-//   // Enter invalid username and password
-//   await page.locator('[data-test="username"]').fill('invalid_user');
-//   await page.locator('[data-test="password"]').fill('wrong_password');
-
-//   // Click Login
-//   await page.locator('[data-test="login-button"]').click();
-
-//   // Verify error message
-//   const errorMessage = page.locator('[data-test="error"]');
-
-//   await expect(errorMessage).toBeVisible();
-//   await expect(errorMessage).toContainText(
-//     'Username and password do not match'
-//   );
-
-//   // Verify user remains on login page
-//   await expect(page).toHaveURL('https://www.saucedemo.com/');
-// });
-
-
 const { test, expect } = require('@playwright/test');
 
 const loginTestData = [
